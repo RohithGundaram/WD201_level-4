@@ -1,0 +1,29 @@
+{
+  "name": "pupils-first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "todo.js",
+  "scripts": {
+    "start": "node todo.js",
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "author": "Rohith",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.7"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write ."
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "husky": "^8.0.2",
+    "jest": "^29.3.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
+}
